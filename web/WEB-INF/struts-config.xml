@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+        "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+    <form-beans>
+    	<form-bean name="relatorioForm" type="br.com.siab.modulo.relatorio.view.form.RelatorioForm" />
+    	<form-bean name="agenteForm" type="br.com.siab.modulo.agente.view.form.AgenteForm" />  
+    	<form-bean name="relatorioSSA2Form" type="br.com.siab.modulo.relatoriossa2.view.form.RelatorioSSA2Form"/>
+    	<form-bean name="sincronismoForm" type="br.com.siab.modulo.sincronismo.view.form.SincronismoForm"/>
+    	<form-bean name="municipioForm" type="br.com.siab.modulo.municipio.view.form.MunicipioForm"/>
+    	
+    </form-beans>
+    
+    <global-forwards>
+	  	<forward name="ERROR_PAGE" path="/Paginas/Geral/viewError.jsp" />
+	  	<forward name="LOGIN" path="/Paginas/Template/principal.jsp"/>
+    </global-forwards>
+
+    <action-mappings>
+    
+    	<!-- ACTIONS DA PÁGINA PRINCIPAL -->
+    	<action parameter="/Paginas/Template/topo.jsp"
+        		path="/topo" 
+        		type="org.apache.struts.actions.ForwardAction" /> 
+        <action parameter="/Paginas/Template/menu.jsp"
+        		path="/menuPrincipal" 
+        		type="org.apache.struts.actions.ForwardAction" /> 
+		<action parameter="/Paginas/Template/inicial.jsp"
+        		path="/inicial" 
+        		type="org.apache.struts.actions.ForwardAction" /> 
+        		
+        <!-- ACTION DOS RELATORIOS -->
+	    <action path="/relatorio"
+	    		type="br.com.siab.modulo.relatorio.view.action.RelatorioAction"
+	    		name="relatorioForm"
+	    		scope="request"
+	    		validate="false">
+	    </action>
+	    
+	    <action path="/relatorioAgente"
+	    		type="br.com.siab.modulo.relatorio.view.action.RelatorioAgenteAction"
+	    		name="relatorioForm"
+	    		scope="request"
+	    		parameter="method"
+	    		validate="false">
+	    		
+	    		<forward name="arvoreAgente" path="/Paginas/Relatorio/relatorioArvoreAgente.jsp" />
+	    		<forward name="listarFamilia" path="/Paginas/Relatorio/relatorioListaFamilia.jsp" />
+	    </action>
+	    
+	    <action path="/relFichaAgente"
+	    		type="org.apache.struts.actions.ForwardAction"
+	    		parameter="/Paginas/Relatorio/relatorioAgente.jsp" />	    
+	    <action path="/relFichaCrianca"
+	    		type="org.apache.struts.actions.ForwardAction"
+	    		parameter="/Paginas/Relatorio/relatorioFichaCrianca.jsp" />
+	    <action path="/relFichaTb"
+	    		type="org.apache.struts.actions.ForwardAction"
+	    		parameter="/Paginas/Relatorio/relatorioFichaTb.jsp" />
+	    <action path="/relFichaDia"
+	    		type="org.apache.struts.actions.ForwardAction"
+	    		parameter="/Paginas/Relatorio/relatorioFichaDia.jsp" />		
+    	<action path="/relFichaHa"
+	    		type="org.apache.struts.actions.ForwardAction"
+	    		parameter="/Paginas/Relatorio/relatorioFichaHa.jsp" />
+	    <action path="/relFichaHan"
+	    		type="org.apache.struts.actions.ForwardAction"
+	    		parameter="/Paginas/Relatorio/relatorioFichaHan.jsp" />			
+	   <action path="/relFichaIdoso"
+	    		type="org.apache.struts.actions.ForwardAction"
+	    		parameter="/Paginas/Relatorio/relatorioFichaIdoso.jsp" />
+		<action path="/relFichaA"
+	    		type="org.apache.struts.actions.ForwardAction"
+	    		parameter="/Paginas/Relatorio/relatorioFichaA.jsp" />
+	    <action path="/relFichaGes"
+	    		type="org.apache.struts.actions.ForwardAction"
+	    		parameter="/Paginas/Relatorio/relatorioFichaGes.jsp" />		
+	    		
+	    <!-- ACTION AGENTE -->
+	    <action path="/agente"
+	    		type="br.com.siab.modulo.agente.view.action.AgenteAction"
+	    		name="agenteForm"
+	    		scope="request"
+	    		input="/Paginas/Agente/pesquisar.jsp"
+	    		parameter="method"
+	    		validate="false">
+	    		
+	    		<forward name="incluir" path="/Paginas/Agente/incluir.jsp" />
+	    		<forward name="editar" path="/Paginas/Agente/editar.jsp" />
+	    		<forward name="listar" path="/Paginas/Agente/listar.jsp" />
+	    </action>
+	    
+	    <!-- ACTION RELATORIO_SSA2 -->
+	    <action path="/relatorioSSA2"
+	    		type="br.com.siab.modulo.relatoriossa2.view.action.RelatorioSSA2Action"
+	    		name="relatorioSSA2Form"
+	    		scope="request"
+	    		input="/Paginas/RelatorioSSA2/pesquisar.jsp"
+	    		parameter="method"
+	    		validate="false">
+	    		
+	    		<forward name="incluir" path="/Paginas/RelatorioSSA2/incluir.jsp" />
+	    		<forward name="editar" path="/Paginas/RelatorioSSA2/editar.jsp" />
+	    		<forward name="exportar"  path="/Paginas/RelatorioSSA2/exportar.jsp" />
+	    		<forward name="listar"  path="/Paginas/RelatorioSSA2/listar.jsp" />
+	    </action>
+	    
+	    <!-- SINCRONISMO -->
+	    <action path="/sincronismo"
+	    		type="br.com.siab.modulo.sincronismo.view.action.SincronismoAction"
+	    		name="sincronismoForm"
+	    		scope="request"
+	    		input="/Paginas/Sincronismo/sincronismo.jsp"
+	    		parameter="method"
+	    		validate="false">
+	    </action>
+	    
+	    <!-- MUNICIPIO -->
+	    <action path="/municipio"
+	    		type="br.com.siab.modulo.municipio.view.action.MunicipioAction"
+	    		name="municipioForm"
+	    		scope="request"
+	    		input="/Paginas/Municipio/pesquisarPopUp.jsp"
+	    		parameter="method"
+	    		validate="false">
+	    </action>
+	    
+	    <!-- EQUIPE -->
+	    <action path="/equipe"
+	    		type="br.com.siab.modulo.equipe.view.action.EquipeAction"
+	    		name="municipioForm"
+	    		scope="request"
+	    		parameter="method" 
+	    		validate="false">
+	    		
+	    		<forward name="pesquisaPopupArea" path="/Paginas/Equipe/pesquisaPopupArea.jsp" />
+	    		<forward name="pesquisaPopupMicroa" path="/Paginas/Equipe/pesquisaPopupMicroa.jsp" />
+	    </action>
+	    
+    
+    </action-mappings>
+
+    <message-resources parameter="ApplicationResources" null="false"/>
+    
+    <!-- =================================================== Validator plugin -->
+
+	  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+	    <set-property
+	        property="pathnames"
+	        value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+	  </plug-in>
+
+</struts-config>
+

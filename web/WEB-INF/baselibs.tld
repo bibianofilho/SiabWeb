@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>taglibs</shortname>
+	<uri>br.com.siab.taglibs</uri>
+	
+	<tag>
+		<name>error</name>
+		<tagclass>br.com.siab.biblioteca.taglibs.MessageTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+	
+	<tag>
+		<name>treeagente</name>
+		<tagclass>br.com.siab.modulo.relatorio.view.taglib.ArvoreAgente</tagclass>
+		<bodycontent>JSP</bodycontent>
+	</tag>
+
+</taglib>
+

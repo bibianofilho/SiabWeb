@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1//EN" "http://jakarta.apache.org/commons/dtds/validator_1_1.dtd">
+
+<form-validation>
+  <!--
+    Define global validation config in validation-global.xml
+  -->
+  <formset>
+  <!--
+    Define form validation config in validation-forms.xml
+  -->
+
+      <form name="relatorioSSA2Form">
+              <field property="ano"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.ano"/>
+              </field>
+              <field property="c_0a11"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_0a11"/>
+              </field>
+              <field property="c_0a112p"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_0a112p"/>
+              </field>
+              <field property="c_0a11gp"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_0a11gp"/>
+              </field>
+              <field property="c_1223"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_1223"/>
+              </field>
+              <field property="c_12232p"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_12232p"/>
+              </field>
+              <field property="c_1223gp"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_1223gp"/>
+              </field>
+              <field property="c_4meses"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_4meses"/>
+              </field>
+              <field property="c_diarre"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_diarre"/>
+              </field>
+              <field property="c_diasro"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_diasro"/>
+              </field>
+              <field property="c_ira"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_ira"/>
+              </field>
+              <field property="c_mamand"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_mamand"/>
+              </field>
+              <field property="c_misto"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_misto"/>
+              </field>
+              <field property="c_vacdia"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_vacdia"/>
+              </field>
+              <field property="c_vacina"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.c_vacina"/>
+              </field>
+              <field property="codArea"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.codArea"/>
+              </field>
+              <field property="codMicroa"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.codMicroa"/>
+              </field>
+              <field property="codSeg"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.codSeg"/>
+              </field>
+              <field property="d_diaac"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.d_diaac"/>
+              </field>
+              <field property="d_diabete"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.d_diabete"/>
+              </field>
+              <field property="d_hanseac"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.d_hanseac"/>
+              </field>
+              <field property="d_hansen"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.d_hansen"/>
+              </field>
+              <field property="d_hiperac"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.d_hiperac"/>
+              </field>
+              <field property="d_hiperten"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.d_hiperten"/>
+              </field>
+              <field property="d_tuberac"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.d_tuberac"/>
+              </field>
+              <field property="d_tubercul"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.d_tubercul"/>
+              </field>
+              <field property="h_0a5des"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.h_0a5des"/>
+              </field>
+              <field property="h_0a5pneu"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.h_0a5pneu"/>
+              </field>
+              <field property="h_alcool"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.h_alcool"/>
+              </field>
+              <field property="h_diabete"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.h_diabete"/>
+              </field>
+              <field property="h_outcau"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.h_outcau"/>
+              </field>
+              <field property="h_psiqui"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.h_psiqui"/>
+              </field>
+              <field property="mes"
+                     depends="required">
+
+                  <arg0 key="relatorioSSA2Form.mes"/>
+              </field>
+              <field property="nascvivo"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.nascvivo"/>
+              </field>
+              <field property="nfamicad"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.nfamicad"/>
+              </field>
+              <field property="ngesac"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.ngesac"/>
+              </field>
+              <field property="ngesCad"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.ngesCad"/>
+              </field>
+              <field property="ngesm20"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.ngesm20"/>
+              </field>
+              <field property="ngespre1"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.ngespre1"/>
+              </field>
+              <field property="ngespre2"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.ngespre2"/>
+              </field>
+              <field property="ngesvac"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.ngesvac"/>
+              </field>
+              <field property="nvisitas"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.nvisitas"/>
+              </field>
+              <field property="o_cau0a28"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.o_cau0a28"/>
+              </field>
+              <field property="o_cau28a1"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.o_cau28a1"/>
+              </field>
+              <field property="o_dia0a28"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.o_dia0a28"/>
+              </field>
+              <field property="o_dia28a1"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.o_dia28a1"/>
+              </field>
+              <field property="o_ira0a28"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.o_ira0a28"/>
+              </field>
+              <field property="o_ira28a1"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.o_ira28a1"/>
+              </field>
+              <field property="o_mul10a14"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.o_mul10a14"/>
+              </field>
+              <field property="obitoadol"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.obitoadol"/>
+              </field>
+              <field property="obitocau"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.obitocau"/>
+              </field>
+              <field property="obitodia"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.obitodia"/>
+              </field>
+              <field property="obitoira"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.obitoira"/>
+              </field>
+              <field property="obitomul"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.obitomul"/>
+              </field>
+              <field property="obitoout"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.obitoout"/>
+              </field>
+              <field property="pesados"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.pesados"/>
+              </field>
+              <field property="peso2500"
+                     depends="required,integer">
+
+                  <arg0 key="relatorioSSA2Form.peso2500"/>
+              </field>
+      </form>
+  </formset>
+</form-validation>
