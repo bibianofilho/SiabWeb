@@ -1,0 +1,189 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font: 8pt/16pt Verdana, Arial;
+    color: #555753;
+}
+
+/* for cool looking "sunken" input boxes, from www.theserverside.com */
+form input, form textarea, form select {
+    padding-left: 4px;
+    color: #666;
+}
+
+/*
+input.button {
+    color: #000;
+}
+*/
+
+/* Warning: IE doesn't support pseudo-class :focus */
+form input:focus, form textarea:focus, form select:focus {
+    border-bottom: #ffdead solid 2px;
+    border-right: #ffdead solid 2px;
+    border-left: #c07300 solid 2px;
+    border-top:  #c07300 solid 2px;
+    color: #000;
+}
+
+form select {
+    padding-left: 0px;
+}
+
+
+/* Links */
+a {
+	text-decoration: none;
+	color: #547F07;
+}
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	color: #000000;
+	text-decoration: underline;
+}
+.menu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.menu:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.menu:hover {
+	text-decoration: underline;
+}
+.menu:active {
+	color: #000000;
+	text-decoration: underline;
+}
+.bp {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+.gp {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #48621A;
+	font-weight: bold;
+}
+.ptext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+.pdado {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: 900;
+}
+.plink {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #48621A;
+	font-size: 9px;
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0px;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: #63802E;
+}
+
+.tituloFormulario {
+	font-family:Arial;
+	background-color:#E0ECD4;
+	width: 100%;
+	color:#48621A;
+	font-weight: bolder;
+	font-size:11px;
+	padding:0px 0px 2px 8px;
+	margin:0px 0px 8px 2px;
+}
+
+p, th, td, #content, #supportingText {
+    font: 8pt/14pt Verdana, Arial;
+}
+
+td {
+	font: 8pt/14pt Verdana, Arial;
+    margin-top: 20px;
+}
+
+
+.logo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #78914A;
+}
+
+
+/* style for list tables */
+table.list {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
+}
+
+table.list td {
+    padding-left: 3px;
+}
+
+table.list th {
+    background: silver;
+    padding-left: 3px;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+table.list thead tr {
+    background-color: silver;
+}
+
+table.list tr.even {
+    background: #eee;
+    border-top: 1px solid silver;
+}
+
+table.list tr.odd {
+    background: white;
+    border-top: 1px solid silver;
+}
+
+legend {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #48621A;
+}
+
+.button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color:#333333;
+	background-color: #F0F0F0;
+	border-color: #E2E2E2;
+}
+
+.divPesquisa {
+	position:absolute;
+	border:1px solid black;
+	padding:0px;
+	margin:0px;
+	z-index:1;
+}

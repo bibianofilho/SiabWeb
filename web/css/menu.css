@@ -1,0 +1,47 @@
+#main_panel
+{
+ border:1px solid green;
+ position:relative;
+ overflow:hidden;
+}
+
+.head_item
+{
+ background-color:#E0ECD4;
+ font-size:11px;
+ font-family:Tahoma;
+ font:bold;
+ color:#638229;
+ border-top:1px solid green;
+ border-bottom:1px solid green;
+ position:absolute;
+ left:0px;
+ cursor:se-resize;
+ text-align:left;
+}
+
+.item
+{
+ background-color:#ffffff;
+ font-family:Tahoma;
+ font-size:11px;
+ left:0px;
+ color:#638229;
+ position:relative;
+ text-align:left;
+}
+
+.item_panel
+{
+ position:absolute;
+ background-color:#ffffff;
+ left:0px;
+ color:#638229;
+}
+
+.item_panel a
+  {
+   text-decoration:none;
+   color:#638229;
+   cursor:hand;
+  }
