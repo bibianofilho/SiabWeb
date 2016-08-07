@@ -1,0 +1,78 @@
+<project name="siab_web" default="build" basedir="..">
+
+<description>
+	SIAB
+</description>
+
+<!-- Propriedades globais do build -->
+<property name="project" 	value="${ant.project.name}" />
+
+<property name="prjweb"	    location="${basedir}/${project}/web" />
+<property name="build"   	location="${basedir}/${project}/build" />
+<property name="dist"    	location="${basedir}/${project}/dist" />
+<property name="src" 		location="${build}/WEB-INF/src"	/>
+<property name="classes" 	location="${build}/WEB-INF/classes" />
+<property name="lib"	 	location="${build}/WEB-INF/lib" />
+
+<property name="auxlibraries" 	value="c:/tomcat5/common/lib" />
+
+
+<!-- Criar diretorios -->
+<target name="createdir" >
+	<echo>CRIANDO DIRETORIOS...</echo>
+	<mkdir dir="${build}" />
+	<mkdir dir="${dist}" />
+</target>
+
+
+<!-- Apagar diretorios -->
+<target name="deletedir">
+	<echo>APAGANDO DIRETORIOS...</echo>
+	<delete dir="${build}"/>
+</target>
+
+<!-- Copiar arquivos do projeto web -->
+<target name="copyfileswebapp">
+
+	<echo>COPIANDO ARQUIVOS...</echo>
+
+	<!-- Copiando estrutura do processo de licitacao -->
+	<copy todir="${build}">
+		<fileset dir="${prjweb}">
+		</fileset>
+	</copy>
+
+</target>
+
+<!-- Apagando os fontes -->
+<target name="deletesrc">
+	<echo>APAGANDO OS FONTES...</echo>
+	<delete dir="${src}"/>	
+	<delete>
+		<fileset dir="${build}/Relatorios">
+		    <include name="*.jrxml"/>
+			<include name="*.bak"/>
+		    <exclude name="*.jasper"/>
+		</fileset>
+	</delete>
+	<delete file="${build}/build.xml"/>
+
+</target>
+
+
+<!-- Empacotar WAR File -->
+<target name="war" depends="deletesrc">
+     <echo>EMPACOTANDO WAR FILE...</echo>	
+     <jar destfile="${dist}/siab.war" 
+		 basedir="${build}"
+     />
+
+</target>  
+
+<!-- Target default -->
+<target name="build" depends="createdir,copyfileswebapp,war,deletedir">
+
+</target>
+
+
+</project>
