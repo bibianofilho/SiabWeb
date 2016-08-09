@@ -4,3 +4,8 @@ The SIAB is a database (software), the goal is to store and process information 
 
 Technologies: Struts MVC, Apache Ant, JavaScript, html, Jsp, CSS, Java, Web Services (Apache Axis) and Postgress database;
 
+![Caution image](docs/screens/main.jpg)<br>
+![Caution image](docs/screens/UserSearch.jpg)<br>
+![Caution image](docs/screens/ReportSSA2Search.jpg)<br>
+![Caution image](docs/screens/ReportFamily.jpg)<br>
+
